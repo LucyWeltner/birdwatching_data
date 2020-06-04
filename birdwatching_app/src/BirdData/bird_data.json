@@ -1,0 +1,383 @@
+{
+	"info": [
+		{
+			"date": "2/25",
+			"weather": "Cloudy",
+			"temperature": 50,
+			"birds": {
+				"song_sparrow": 4,
+				"american_crow": 1,
+				"northern_cardinal": 4,
+				"yellow_rumped_warbler": 1,
+				"blue_jay": 3,
+				"downy_woodpecker": 4,
+				"american_goldfinch": 1,
+				"black_capped_chickadee": 2,
+				"canada_goose": 2,
+				"red_winged_blackbird": 10,
+				"hairy_woodpecker": 1,
+				"tufted_titmouse": 4,
+				"common_grackle": 24,
+				"mourning_dove": 1
+
+			}
+		},
+		{
+			"date": "3/3",
+			"weather": "sunny",
+			"temperature": 55,
+			"birds": {
+				"tufted_titmouse": 9,
+				"northern_cardinal": 4,
+				"black_capped_chickadee": 3,
+				"song_sparrow": 4,
+				"common_grackle": 20,
+				"canada_goose": 7,
+				"red_winged_blackbird": 9,
+				"red_shouldered_hawk": 1,
+				"red_tailed_hawk": 1,
+				"downy_woodpecker": 2,
+				"wood_duck": 2,
+				"yellow_rumped_warbler": 3,
+				"white_throated_sparrow": 2,
+				"house_finch": 2,
+				"mourning_dove": 2,
+				"american_tree_sparrow": 1,
+				"american_goldfinch": 2,
+				"blue_jay": 3
+			}
+		},
+
+		{
+			"date": "3/11",
+			"temperature": 48,
+			"birds": {
+				"red_winged_blackbird": 12,
+				"song_sparrow": 5,
+				"northern_cardinal": 2,
+				"canada_goose": 2,
+				"common_grackle": 15,
+				"american_goldfinch": 1, 
+				"blue_jay": 5,
+				"black_capped_chickadee": 1,
+				"mallard": 2
+			}
+		},
+
+		{
+			"date": "3/18",
+			"temperature": 42,
+			"weather": "sunny",
+			"birds": {
+				"common_grackle": 18,
+				"american_robin": 3,
+				"song_sparrow": 10,
+				"tufted_titmouse": 4,
+				"canada_goose": 2,
+				"northern_cardinal": 3,
+				"red_winged_blackbird": 15,
+				"wood_duck": 2,
+				"mourning_dove": 2,
+				"yellow_rumped_warbler": 1,
+				"american_crow": 3,
+				"house_finch": 1,
+				"american_goldfinch": 2,
+				"downy_woodpecker": 1
+			}
+		},
+
+		{
+			"date": "3/24",
+			"temperature": 39,
+			"weather": "party cloudy",
+			"birds": {
+				"american_robin": 30,
+				"red_winged_blackbird": 17,
+				"song_sparrow": 9,
+				"mourning_dove": 1,
+				"common_grackle": 30,
+				"yellow_rumped_warbler": 1,
+				"northern_cardinal": 7,
+				"blue_jay": 6,
+				"canada_goose": 5,
+				"american_crow": 1,
+				"american_goldfinch": 1,
+				"mallard": 3,
+				"downy_woodpecker": 1
+
+			}
+		},
+
+		{
+			"date": "4/1",
+			"temperature": 39,
+			"weather": "sunny (later cloudy)",
+			"birds": {
+				"song_sparrow": 5,
+				"red_winged_blackbird": 12,
+				"black_capped_chickadee": 2,
+				"blue_jay": 1, 
+				"american_goldfinch": 4,
+				"common_grackle": 24,
+				"mallard": 1,
+				"yellow_rumped_warbler": 1,
+				"fish_crow": 1,
+				"hooded_merganser": 2,
+				"northern_cardinal": 8,
+				"american_robin": 9,
+				"tufted_titmouse": 3,
+				"canada_goose": 3,
+				"house_finch": 2,
+				"downy_woodpecker": 1,
+				"blue_jay": 1,
+				"swamp_sparrow": 2
+
+			}
+		},
+
+		{
+			"date": "4/7",
+			"temperature": 55,
+			"birds": {
+				"blue_jay": 2,
+				"tufted_titmouse": 2,
+				"american_robin": 14,
+				"red_winged_blackbird": 22,
+				"common_grackle": 49,
+				"song_sparrow": 6,
+				"black_capped_chickadee": 2,
+				"northern_flicker": 1,
+				"tufted_titmouse": 3,
+				"northern_cardinal": 5,
+				"american_goldfinch": 6,
+				"american_crow": 2,
+				"canada_goose": 6,
+				"mallard": 1,
+				"downy_woodpecker": 2
+
+			} 
+		},
+
+		{
+			"date": "4/14",
+			"temperature": 50,
+			"weather": "sunny",
+			"birds": {
+				"american_robin": 12,
+				"red_winged_blackbird": 20,
+				"canada_goose": 5,
+				"eastern_phoebe": 1,
+				"song_sparrow": 9,
+				"white_breasted_nuthatch": 1,
+				"blue_jay": 3,
+				"black_capped_chickadee": 5,
+				"common_grackle": 35,
+				"northern_cardinal": 12,
+				"tufted_titmouse": 2,
+				"northern_flicker": 2,
+				"downy_woodpecker": 4,
+				"american_goldfinch": 6,
+				"red_bellied_woodpecker": 1,
+				"mourning_dove": 1,
+				"white_throated_sparrow": 3,
+				"mallard": 2,
+				"american_crow": 1,
+				"tree_swallow": 5,
+				"yellow_rumped_warbler": 1
+
+			}
+		},
+
+		{
+			"date": "4/21",
+			"temperature": 52,
+			"weather": "sunny",
+			"birds": {
+				"red_winged_blackbird": 11,
+				"american_robin": 27,
+				"song_sparrow": 8,
+				"northern_cardinal": 6,
+				"common_grackle": 37,
+				"canada_goose": 5,
+				"american_goldfinch": 1,
+				"tufted_titmouse": 5,
+				"mallard": 4,
+				"northern_flicker": 2,
+				"blue_grey_gnatcatcher": 2,
+				"mourning_dove": 1,
+				"blue_jay": 1,
+				"black_capped_chickadee": 2
+
+			}
+		},
+
+		{
+			"date": "4/29",
+			"temperature": 54,
+			"birds": {
+				"red_bellied_woodpecker": 2,
+				"field_sparrow": 1,
+				"northern_cardinal": 10, 
+				"american_robin": 18,
+				"red_winged_blackbird": 26,
+				"song_sparrow": 19, 
+				"american_goldfinch": 6,
+				"common_grackle": 40,
+				"blue_grey_gnatcatcher": 2,
+				"canada_goose": 4,
+				"chipping_sparrow": 4,
+				"tufted_titmouse": 3,
+				"mallard": 1,
+				"black_capped_chickadee": 7,
+				"mourning_dove": 2,
+				"downy_woodpecker": 2,
+				"white_throated_sparrow": 6,
+				"american_crow": 1,
+				"yellow_rumped_warbler": 1
+
+			}
+		},
+
+		{
+			"date": "5/5",
+			"weather": "sunny",
+			"temperature": 52,
+			"birds": {
+				"blue_grey_gnatcatcher": 3,
+				"common_grackle": 40, 
+				"grey_catbird": 3,
+				"song_sparrow": 10,
+				"red_winged_blackbird": 21,
+				"black_capped_chickadee": 1,
+				"black_and_white_warbler": 3,
+				"american_crow": 2,
+				"american_robin": 6,
+				"american_goldfinch": 2,
+				"yellow_warbler": 20,
+				"common_yellowthroat": 4,
+				"yellow_rumped_warbler": 2,
+				"canada_goose": 4,
+				"blue_jay": 2,
+				"scarlet_tanager": 1,
+				"northern_cardinal": 3
+
+			}
+		},
+
+		{
+			"date": "5/12",
+			"weather": "partly cloudy",
+			"temperature": 50,
+			"birds": {
+				"red_winged_blackbird": 25,
+				"american_robin": 9,
+				"song_sparrow": 17,
+				"yellow_warbler": 2,
+				"blue_grey_gnatcatcher": 2,
+				"american_goldfinch": 1,
+				"rose_breasted_grosbeak": 4,
+				"swamp_sparrow": 2,
+				"yellow_warbler": 20,
+				"american_crow": 6,
+				"common_yellowthroat": 11,
+				"common_grackle": 16,
+				"black_capped_chickadee": 4,
+				"grey_catbird": 5,
+				"yellow_rumped_warbler": 3,
+				"tree_swallow": 1,
+				"northern_cardinal": 4,
+				"black_and_white_warbler": 2,
+				"mallard": 1,
+				"house_wren": 2,
+				"american_crow": 1
+
+			}
+		},
+
+		{
+			"date": "5/19",
+			"weather": "sunny",
+			"temperature": 59,
+			"birds": {
+				"grey_catbird": 8,
+				"song_sparrow": 8,
+				"rose_breasted_grosbeak": 1,
+				"yellow_warbler": 13,
+				"red_winged_blackbird": 6,
+				"common_yellowthroat": 13,
+				"american_goldfinch": 2,
+				"common_grackle": 9,
+				"american_robin": 9, 
+				"warbling_vireo": 4,
+				"blue_grey_gnatcatcher": 1,
+				"swamp_sparrow": 1,
+				"baltimore_oriole": 1,
+				"northern_cardinal": 1,
+				"american_redstart": 2,
+				"willow_flycatcher": 1,
+				"tree_swallow": 1,
+				"yellow_rumped_warbler": 1
+
+			}
+		},
+
+		{
+			"date": "5/26",
+			"temperature": 70,
+			"birds": {
+				"northern_cardinal": 3,
+				"common_yellowthroat": 11,
+				"red_winged_blackbird": 15,
+				"yellow_rumped_warbler": 1,
+				"grey_catbird": 6,
+				"american_redstart": 2,
+				"common_grackle": 3,
+				"song_sparrow": 8,
+				"american_robin": 11,
+				"yellow_warbler": 16, 
+				"common_grackle": 1,
+				"warbling_vireo": 3,
+				"common_grackle": 9,
+				"eastern_kingbird": 2,
+				"downy_woodpecker": 1,
+				"ovenbird": 1,
+				"tree_swallow": 3,
+				"downy_woodpecker": 1,
+				"house_wren": 1,
+				"willow_flycatcher": 1
+			}
+		},
+
+		{
+			"date": "6/2",
+			"temperature": 59,
+			"weather": "cloudy",
+			"birds": {
+				"northern_cardinal": 5,
+				"american_robin": 11,
+				"eastern_wood_pewee": 1,
+				"tufted_titmouse": 1,
+				"common_yellowthroat": 10,
+				"rose_breasted_grosbeak": 1,
+				"american_robin": 5,
+				"blue_jay": 1,
+				"common_grackle": 4,
+				"song_sparrow": 13,
+				"red_bellied_woodpecker": 1,
+				"yellow_warbler": 16,
+				"red_winged_blackbird": 19,
+				"warbling_vireo": 3,
+				"mourning_dove": 1,
+				"downy_woodpecker": 2,
+				"cedar_waxwing": 6,
+				"grey_catbird": 2,
+				"tree_swallow": 2,
+				"american_goldfinch": 1,
+				"eastern_kingbird": 1,
+				"american_crow": 1,
+				"american_redstart": 1
+			}
+		}
+
+	]
+}
