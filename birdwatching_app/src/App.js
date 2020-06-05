@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Graph from './Components/graph.js'
 
@@ -8,12 +7,18 @@ function App() {
   birdData = JSON.stringify(birdData)
   birdData = JSON.parse(birdData)
   birdData = birdData.info.map(date => date.birds)
-  console.log(birdData)
+  let allSightings = birdData.map(sightings => Object.keys(sightings))
+  allSightings = allSightings.flat()
+  let birdSpecies = {}
+  allSightings.forEach(species => {
+    if (!birdSpecies[species]) {
+        birdSpecies[species] = "yes"
+    }
+  })
+  console.log(birdSpecies)
   return (
     <div className="App">
-      <header className="App-header">
-        <Graph title="stuff" data={[10, 20, 50, 5]}/>
-      </header>
+      <Graph title="stuff" data={[10, 20, 50, 5]}/>
     </div>
   );
 }
