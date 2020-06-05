@@ -1,18 +1,24 @@
 import React from "react" 
 import Graph from './graph.js'
+
 export default class SeachMenu extends React.Component {
 	state = {
-		selectedBird: ""
+		selectedBird: "song_sparrow"
 	}
-	makeGraph(event) {
-		event.preventDefault()
-		console.log("you selected " + this.state.selectedBird)
-	}
+	// makeGraph(event) {
+	// 	event.preventDefault()
+	// 	console.log("you selected " + this.state.selectedBird)
+	// 	console.log(this.props.allData[`${this.state.selectedBird}`])
+
+	// 	return (
+	// 		<Graph data={this.props.allData[this.state.selectedBird]}/>
+	// 	)
+	// }
 	render() {
 		return(
-			<form onSubmit={value => this.makeGraph(value)}>
+			<form onSubmit={event => {event.preventDefault(); this.props.makeGraph(this.state.selectedBird)}}>
 				<select name="birds" onChange={event => this.setState({selectedBird: event.target.value})}>
-					{this.props.options.map((option, index) => <option value={option} key={index}>{option}</option>)}
+					{this.props.options.map((species, index) => <option value={species} key={index}>{species}</option>)}
 				</select>
 				<input type="submit"/>
 			</form>
