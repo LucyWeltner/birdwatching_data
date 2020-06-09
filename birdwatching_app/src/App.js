@@ -13,7 +13,11 @@ class App extends React.Component {
     let birdData = require("./BirdData/bird_data.json")
     birdData = JSON.stringify(birdData)
     birdData = JSON.parse(birdData)
-    birdData = birdData.info.map(date => date.birds)
+    return birdData.info
+  }
+
+  getSightings() {
+    let birdData = this.processData().map(date => date.birds)
     let allSightings = birdData.map(sightings => Object.keys(sightings))
     allSightings = allSightings.flat()
     let birdSpecies = {}
@@ -33,8 +37,13 @@ class App extends React.Component {
     this.setState({birdSpecies: birdSpecies}, () => console.log(this.state))
   }
 
+  getDates() {
+    console.log("dates", this.processData().map(day => day.date))
+    return this.processData().map(day => day.date)
+  }
+
   componentDidMount() {
-    this.processData()
+    this.getSightings()
   }
 
   makeGraph = (bird) => {
@@ -54,7 +63,7 @@ class App extends React.Component {
         <h2>Search For a Bird</h2>
         <SearchMenu options={Object.keys(this.state.birdSpecies)} makeGraph={this.makeGraph}/>
         <div id="graph">
-          <Graph title={this.state.title} data={this.state.data}/>
+          <Graph title={this.state.title} data={this.state.data} dates={() => this.getDates()}/>
         </div>
       </div>
     );

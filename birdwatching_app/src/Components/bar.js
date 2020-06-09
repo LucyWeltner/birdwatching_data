@@ -16,17 +16,18 @@ export default class Bar extends React.Component {
 
 	render() {
 		let textbox = null
+		let numOfSightings = this.props.height/5
 		if (this.state.displaySightings) {
 			if (this.props.height > 20) {
-				textbox = <text transform='rotate(90)' y="-2.5" x="2.5" font-size="5px" fill="white">{this.props.height/5} Sightings</text>
+				textbox = <text transform='rotate(90)' y="-2.5" x="2.5" fontSize="5px" fill="white">{numOfSightings} Sightings</text>
 			}
 			else {
-				 textbox = <text font-size="5px" transform='rotate(90)' y="-2.5" x={-25} fill="black">{this.props.height/5} Sightings</text>
+				 textbox = <text font-size="5px" transform='rotate(90)' y="-2.5" x="-26" fill="black">{(numOfSightings === 1) ? numOfSightings + " Sighting" : numOfSightings + " Sightings"}</text>
 			}
 		}
 		return (
-			<g class="bar" transform={`translate(${this.props.xAxis*10+15}, ${180-this.props.height})`}>
-				<rect onMouseOver={this.showHeight} onMouseLeave={this.hideHeight} height={this.props.height} width="10" stroke="grey" stroke-width="1"/>
+			<g className="bar" transform={`translate(${this.props.xAxis*10+15}, ${180-this.props.height})`}>
+				<rect onMouseOver={this.showHeight} onMouseLeave={this.hideHeight} height={this.props.height} width="10" stroke="grey" strokeWidth="1"/>
 				{textbox}
 			</g> 
 		)
