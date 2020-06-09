@@ -38,7 +38,6 @@ class App extends React.Component {
   }
 
   getDates() {
-    console.log("dates", this.processData().map(day => day.date))
     return this.processData().map(day => day.date)
   }
 

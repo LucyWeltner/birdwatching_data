@@ -377,6 +377,35 @@
 				"american_crow": 1,
 				"american_redstart": 1
 			}
+		},
+
+		{
+			"date": "6/9",
+			"temperature": 64,
+			"weather": "Cloudy",
+			"birds": {
+				"blue_grey_gnatcatcher": 2,
+				"common_yellowthroat": 7,
+				"song_sparrow": 11,
+				"yellow_warbler": 21,
+				"red_winged_blackbird": 24,
+				"warbling_vireo": 5,
+				"cedar_waxwing": 7,
+				"black_capped_chickadee": 3,
+				"common_grackle": 14,
+				"grey_catbird": 5,
+				"tufted_titmouse": 2,
+				"northern_cardinal": 1,
+				"american_goldfinch": 5,
+				"american_redstart": 1,
+				"willow_flycatcher": 1,
+				"rose_breasted_grosbeak": 1,
+				"american_robin": 6,
+				"blue_jay": 1,
+				"baltimore_oriole": 1,
+				"white_throated_sparrow": 1,
+				"eastern_kingbird": 1
+			}
 		}
 
 	]

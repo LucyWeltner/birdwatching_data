@@ -1,5 +1,4 @@
 import React from "react" 
-import Graph from './graph.js'
 
 export default class SeachMenu extends React.Component {
 	state = {
