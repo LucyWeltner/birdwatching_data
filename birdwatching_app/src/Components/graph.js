@@ -10,7 +10,7 @@ export default class Graph extends React.Component {
 				<line x1="10" y1="180" x2="180" y2="180" stroke="grey"/>
 				{this.props.data.map((height, index) => <Bar key={index} xAxis={index} height={height*5}/>)}
 				{console.log(this.props.dates())}
-				{this.props.dates().map((date, index) => <text x={index*10+15} fontSize="5" y="190" key={index}>{date}</text>)}
+				{this.props.dates().map((date, index) => <text x={index*10+15} fontSize="4" y="190" key={index}>{date+" "}</text>)}
 			</svg>
 		)
 
