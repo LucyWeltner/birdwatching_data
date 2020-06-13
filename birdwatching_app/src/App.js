@@ -7,13 +7,26 @@ class App extends React.Component {
   state = {
     birdSpecies: {},
     data: [],
-    title: "stuff"
+    title: "stuff",
+    totals: {}
   }
+
   processData() {
     let birdData = require("./BirdData/bird_data.json")
     birdData = JSON.stringify(birdData)
     birdData = JSON.parse(birdData)
     return birdData.info
+  }
+
+  getTotals() {
+    let allData = this.processData()
+    let birdData = allData.map(date => date.birds)
+    let NumOfSightings = birdData.map(date => Object.values(date))
+    let totalsObj = {}
+    NumOfSightings.forEach((date, index) => {
+      totalsObj[allData[index].date] = date.reduce((total=0, sighting) => total + sighting)
+    }) 
+    this.setState({totals: totalsObj})
   }
 
   getSightings() {
@@ -34,7 +47,7 @@ class App extends React.Component {
         birdSpecies[species] = sightingsForSpecies
       }
     })
-    this.setState({birdSpecies: birdSpecies}, () => console.log(this.state))
+    this.setState({birdSpecies: birdSpecies})
   }
 
   getDates() {
@@ -43,6 +56,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.getSightings()
+    this.getTotals()
   }
 
   makeGraph = (bird) => {
