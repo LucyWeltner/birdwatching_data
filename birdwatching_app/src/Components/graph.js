@@ -5,11 +5,10 @@ import _ from "lodash"
 export default class Graph extends React.Component {
 	render() {
 		let scale 
-		console.log(this.props.data)
 		if (_.max(this.props.data) > 50) {
 			scale = 1
 		}
-		else if (_.max(this.props.data) > 25) {
+		else if (_.max(this.props.data) > 30) {
 			scale = 2
 		}
 		else {	

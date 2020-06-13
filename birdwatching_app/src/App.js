@@ -26,7 +26,6 @@ class App extends React.Component {
       totalsObj[allData[index].date] = date.reduce((total=0, sighting) => total + sighting)
     }) 
     return totalsObj
-    // this.setState({totals: totalsObj})
   }
 
   getSightings() {
@@ -64,9 +63,6 @@ class App extends React.Component {
     this.setState(prevState => {
       return {...prevState, title: bird, data: prevState.birdSpecies[bird]}
     })
-    // let graph = document.getElementById("graph")
-    // graphElement = <Graph title={bird} data={this.state.birdSpecies[bird]}/>
-    // ReactDOM.render(graphElement, graph)
   }
 
   render() {
@@ -75,7 +71,7 @@ class App extends React.Component {
         <h2>Search For a Bird</h2>
         <SearchMenu options={Object.keys(this.state.birdSpecies)} makeGraph={this.makeGraph}/>
         <div id="graph">
-          <Graph title={this.state.title} data={this.state.data} dates={this.getDates()}/>
+          <Graph title={this.state.title.replace(/_/g, " ")} data={this.state.data} dates={this.getDates()}/>
         </div>
         <div id="allBirds">
           <Graph title="All Bird Sightings" data={Object.values(this.getTotals())} dates={Object.keys(this.getTotals())}/>

@@ -2,7 +2,7 @@ import React from "react"
 
 export default class SeachMenu extends React.Component {
 	state = {
-		selectedBird: "song_sparrow"
+		selectedBird: "american_crow"
 	}
 	// makeGraph(event) {
 	// 	event.preventDefault()
@@ -14,10 +14,12 @@ export default class SeachMenu extends React.Component {
 	// 	)
 	// }
 	render() {
+		let sortedOptions = this.props.options.sort()
+		console.log(sortedOptions)
 		return(
 			<form onSubmit={event => {event.preventDefault(); this.props.makeGraph(this.state.selectedBird)}}>
 				<select name="birds" onChange={event => this.setState({selectedBird: event.target.value})}>
-					{this.props.options.map((species, index) => <option value={species} key={index}>{species}</option>)}
+					{sortedOptions.map((species, index) => <option value={species} key={index}>{species.replace(/_/g, " ")}</option>)}
 				</select>
 				<input type="submit"/>
 			</form>
