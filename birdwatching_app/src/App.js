@@ -32,7 +32,6 @@ class App extends React.Component {
   getDiversity() {
     let allData = this.processData()
     let numOfSpecies = allData.map(date => Object.values(date.birds).length)
-    console.log("numOfSpecies", numOfSpecies)
     return numOfSpecies 
   }
 
@@ -86,7 +85,6 @@ class App extends React.Component {
   getSearchOptions() {
     let birdSpeciesArray = Object.keys(this.state.birdSpecies)
     birdSpeciesArray = birdSpeciesArray.concat(["all_birds", "all_species"])
-    console.log("bird array", birdSpeciesArray)
     return birdSpeciesArray
   }
 

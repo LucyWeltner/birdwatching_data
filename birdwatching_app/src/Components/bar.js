@@ -1,5 +1,4 @@
 import React from "react"
-import BarCSS from './bar.css'
 
 export default class Bar extends React.Component {
 	state = {

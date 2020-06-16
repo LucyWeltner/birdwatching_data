@@ -382,7 +382,7 @@
 		{
 			"date": "6/9",
 			"temperature": 64,
-			"weather": "Cloudy",
+			"weather": "cloudy",
 			"birds": {
 				"blue_grey_gnatcatcher": 2,
 				"common_yellowthroat": 7,
@@ -405,6 +405,31 @@
 				"baltimore_oriole": 1,
 				"white_throated_sparrow": 1,
 				"eastern_kingbird": 1
+			}
+		},
+
+		{
+			"date": "6/16",
+			"temperature": 72,
+			"weather": "sunny",
+			"birds": {
+				"song_sparrow": 18,
+				"red_winged_blackbird": 12,
+				"warbling_vireo": 7,
+				"common_yellowthroat": 3,
+				"northern_cardinal": 4,
+				"grey_catbird": 5,
+				"common_grackle": 35,
+				"american_robin": 4,
+				"yellow_warbler": 12,
+				"cedar_waxwing": 3,
+				"american_goldfinch": 2,
+				"turkey_vulture": 1,
+				"american_crow": 2,
+				"baltimore_oriole": 2,
+				"eastern_kingbird": 1,
+				"tree_swallow": 1
+
 			}
 		}
 
