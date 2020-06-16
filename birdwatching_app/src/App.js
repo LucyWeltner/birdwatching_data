@@ -28,6 +28,13 @@ class App extends React.Component {
     return totalsObj
   }
 
+  getDiversity() {
+    let allData = this.processData()
+    let numOfSpecies = allData.map(date => Object.values(date.birds).length)
+    console.log("numOfSpecies", numOfSpecies)
+    return numOfSpecies 
+  }
+
   getSightings() {
     let birdData = this.processData().map(date => date.birds)
     let allSightings = birdData.map(sightings => Object.keys(sightings))
@@ -74,7 +81,10 @@ class App extends React.Component {
           <Graph title={this.state.title.replace(/_/g, " ")} data={this.state.data} dates={this.getDates()}/>
         </div>
         <div id="allBirds">
-          <Graph title="All Bird Sightings" data={Object.values(this.getTotals())} dates={Object.keys(this.getTotals())}/>
+          <Graph title="Number of Birds Sighted" data={Object.values(this.getTotals())} dates={Object.keys(this.getTotals())}/>
+        </div>
+        <div id="birdDiversity">
+          <Graph title="Number of Species Sighted" data={this.getDiversity()} dates={Object.keys(this.getTotals())}/>
         </div>
       </div>
     );
