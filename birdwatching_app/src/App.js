@@ -7,7 +7,8 @@ class App extends React.Component {
   state = {
     birdSpecies: {},
     data: [],
-    title: "stuff",
+    title: "choose_a_bird",
+    info: "Sighting"
   }
 
   processData() {
@@ -65,26 +66,37 @@ class App extends React.Component {
   }
 
   makeGraph = (bird) => {
-    console.log("you selected " + bird)
-    console.log(this.state.birdSpecies[bird])
-    this.setState(prevState => {
-      return {...prevState, title: bird, data: prevState.birdSpecies[bird]}
-    })
+    if (bird !== "all_birds" && bird !== "all_species") {
+      this.setState(prevState => {
+        return {...prevState, title: bird, data: prevState.birdSpecies[bird], info: "Sighting"}
+      })
+    }
+    else if (bird === "all_birds") {
+      this.setState(prevState => {
+        return {...prevState, title: "all_birds", data: Object.values(this.getTotals()), info: "Sighting"}
+      })
+    }
+    else {
+      this.setState(prevState => {
+        return {...prevState, title: "all_species", data: this.getDiversity(), info: "Specie"}
+      })
+    }
+  }
+
+  getSearchOptions() {
+    let birdSpeciesArray = Object.keys(this.state.birdSpecies)
+    birdSpeciesArray = birdSpeciesArray.concat(["all_birds", "all_species"])
+    console.log("bird array", birdSpeciesArray)
+    return birdSpeciesArray
   }
 
   render() {
     return (
       <div className="App">
         <h2>Search For a Bird</h2>
-        <SearchMenu options={Object.keys(this.state.birdSpecies)} makeGraph={this.makeGraph}/>
+        <SearchMenu options={this.getSearchOptions()} makeGraph={this.makeGraph}/>
         <div id="graph">
-          <Graph title={this.state.title.replace(/_/g, " ")} data={this.state.data} dates={this.getDates()}/>
-        </div>
-        <div id="allBirds">
-          <Graph title="Number of Birds Sighted" data={Object.values(this.getTotals())} dates={Object.keys(this.getTotals())}/>
-        </div>
-        <div id="birdDiversity">
-          <Graph title="Number of Species Sighted" data={this.getDiversity()} dates={Object.keys(this.getTotals())}/>
+          <Graph title={this.state.title.replace(/_/g, " ")} data={this.state.data} dates={this.getDates()} getTotals={() => this.getTotals()} info={this.state.info}/>
         </div>
       </div>
     );
@@ -93,5 +105,7 @@ class App extends React.Component {
 }
 
 export default App;
+
+
 
 

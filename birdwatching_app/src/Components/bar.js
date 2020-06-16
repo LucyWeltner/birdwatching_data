@@ -19,10 +19,10 @@ export default class Bar extends React.Component {
 		let numOfSightings = this.props.height/this.props.scale
 		if (this.state.displaySightings) {
 			if (this.props.height > 20) {
-				textbox = <text transform='rotate(90)' y="-2.5" x="2.5" fontSize="5px" fill="white">{numOfSightings} Sightings</text>
+				textbox = <text transform='rotate(90)' y="-2.5" x="2.5" fontSize="5px" fill="white">{numOfSightings} {this.props.info + "s"}</text>
 			}
 			else {
-				 textbox = <text fontSize="5px" transform='rotate(90)' y="-2.5" x="-26" fill="black">{(numOfSightings === 1) ? numOfSightings + " Sighting" : numOfSightings + " Sightings"}</text>
+				 textbox = <text fontSize="5px" transform='rotate(90)' y="-2.5" x="-26" fill="black">{(numOfSightings === 1) ? numOfSightings + " " + this.props.info : numOfSightings + " " + this.props.info + "s"}</text>
 			}
 		}
 		return (
