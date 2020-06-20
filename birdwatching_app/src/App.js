@@ -21,10 +21,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="header">
-          <div className="item1"></div>
-          <div className="item2"></div>
-        </div>
         <SearchForBird processData = {this.processData}/>
         <SearchForDate processData={this.processData}/>
       </div>
