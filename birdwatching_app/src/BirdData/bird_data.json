@@ -433,5 +433,54 @@
 			}
 		}
 
-	]
+	],
+
+	"pics": 
+		{
+			"song_sparrow": "https://www.allaboutbirds.org/guide/assets/photo/66116661-720px.jpg",
+			"warbling_vireo": "https://www.allaboutbirds.org/guide/assets/photo/65763751-720px.jpg",
+			"northern_cardinal": "https://www.allaboutbirds.org/guide/assets/photo/63667281-720px.jpg",
+			"northern_flicker": "https://www.allaboutbirds.org/guide/assets/photo/60403261-720px.jpg",
+			"american_goldfinch": "https://www.allaboutbirds.org/guide/assets/photo/63737331-720px.jpg",
+			"american_robin": "https://www.allaboutbirds.org/guide/assets/photo/60412921-720px.jpg", 
+			"american_redstart": "https://www.allaboutbirds.org/guide/assets/photo/64514531-720px.jpg",
+			"cedar_waxwing": "https://www.allaboutbirds.org/guide/assets/photo/59874521-720px.jpg",
+			"american_crow": "https://www.allaboutbirds.org/guide/assets/photo/59858041-720px.jpg",
+			"american_tree_sparrow": "https://www.allaboutbirds.org/guide/assets/photo/64971261-720px.jpg",
+			"swamp_sparrow": "https://www.allaboutbirds.org/guide/assets/photo/64985151-720px.jpg",
+			"tree_swallow": "https://www.allaboutbirds.org/guide/assets/photo/68280061-720px.jpg",
+			"eastern_kingbird": "https://www.allaboutbirds.org/guide/assets/photo/65684471-720px.jpg",
+			"eastern_phoebe": "https://www.allaboutbirds.org/guide/assets/photo/65681481-720px.jpg",
+			"eastern_wood_pewee": "https://www.allaboutbirds.org/guide/assets/photo/65617351-480px.jpg",
+			"scarlet_tanager": "https://www.allaboutbirds.org/guide/assets/photo/67449631-720px.jpg",
+			"rose_breasted_grosbeak": "https://www.allaboutbirds.org/guide/assets/photo/63733391-720px.jpg",
+			"red_winged_blackbird": "https://www.allaboutbirds.org/guide/assets/photo/63744251-720px.jpg",
+			"red_bellied_woodpecker": "https://www.allaboutbirds.org/guide/assets/photo/64995071-720px.jpg",
+			"red_tailed_hawk": "https://www.allaboutbirds.org/guide/assets/photo/60384771-720px.jpg",
+			"red_shouldered_hawk": "https://www.allaboutbirds.org/guide/assets/photo/71533441-720px.jpg",
+			"willow_flycatcher": "https://www.allaboutbirds.org/guide/assets/photo/38663021-720px.jpg",
+			"chipping_sparrow": "https://www.allaboutbirds.org/guide/assets/photo/64972021-720px.jpg",
+			"black_capped_chickadee": "https://www.allaboutbirds.org/guide/assets/photo/60411301-720px.jpg",
+			"black_and_white_warbler": "https://www.allaboutbirds.org/guide/assets/photo/63666511-720px.jpg",
+			"blue_grey_gnatcatcher": "https://www.allaboutbirds.org/guide/assets/photo/68033821-720px.jpg",
+			"blue_jay": "https://www.allaboutbirds.org/guide/assets/photo/59859171-720px.jpg",
+			"baltimore_oriole": "https://www.allaboutbirds.org/guide/assets/photo/63734251-720px.jpg",
+			"yellow_warbler": "https://www.allaboutbirds.org/guide/assets/photo/64802871-720px.jpg",
+			"yellow_rumped_warbler": "https://www.allaboutbirds.org/guide/assets/photo/66119101-720px.jpg",
+			"common_yellowthroat": "https://www.allaboutbirds.org/guide/assets/photo/66117571-720px.jpg",
+			"common_grackle": "https://www.allaboutbirds.org/guide/assets/photo/67364561-720px.jpg",
+			"white_throated_sparrow": "https://www.allaboutbirds.org/guide/assets/photo/64980371-720px.jpg",
+			"white_breasted_nuthatch": "https://www.allaboutbirds.org/guide/assets/photo/68039351-720px.jpg",
+			"grey_catbird": "https://www.allaboutbirds.org/guide/assets/photo/62999401-720px.jpg",
+			"tufted_titmouse": "https://www.allaboutbirds.org/guide/assets/photo/63745741-720px.jpg",
+			"turkey_vulture": "https://www.allaboutbirds.org/guide/assets/photo/60317261-720px.jpg",
+			"downy_woodpecker": "https://www.allaboutbirds.org/guide/assets/photo/60397941-720px.jpg",
+			"mallard": "https://www.allaboutbirds.org/guide/assets/photo/60021801-720px.jpg",
+			"house_wren": "https://www.allaboutbirds.org/guide/assets/photo/59860711-720px.jpg",
+			"hooded_merganser": "https://www.allaboutbirds.org/guide/assets/photo/63910041-720px.jpg",
+			"hairy_woodpecker": "https://www.allaboutbirds.org/guide/assets/photo/68929211-720px.jpg",
+			"house_finch": "https://www.allaboutbirds.org/guide/assets/photo/63736771-720px.jpg",
+			"canada_goose": "https://www.allaboutbirds.org/guide/assets/photo/59953191-720px.jpg",
+
+		}
 }
