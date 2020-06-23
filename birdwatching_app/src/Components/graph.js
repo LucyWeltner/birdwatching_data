@@ -1,6 +1,7 @@
 import React from "react"
 import Bar from "./bar.js"
 import _ from "lodash"
+import graphCSS from './graph.css'
 
 export default class Graph extends React.Component {
 	render() {
@@ -16,7 +17,7 @@ export default class Graph extends React.Component {
 		}
 		return (
 				<svg viewBox = "0 0 200 300">
-					<text x="10" y ="20">{this.props.title}</text>
+					<text id="title" x="10" y ="20">{this.props.title}</text>
 					<line x1="10" y1="25" x2="10" y2="180" stroke="grey"/>
 					<line x1="10" y1="180" x2="180" y2="180" stroke="grey"/>
 					{this.props.data.map((height, index) => <Bar key={index} xAxis={index} height={height*scale} scale={scale} info={this.props.info}/>)}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Graph from './graph.js'
 import SearchMenu from './search_menu.js'
+import birdContainer from './birdContainer.css'
 
 export default class SearchForBird extends React.Component {
   state = {
@@ -94,7 +95,8 @@ export default class SearchForBird extends React.Component {
       <div className="birdSearchContainer">
         <h2>Search For a Bird</h2>
         <SearchMenu options={this.getSearchOptions()} makeGraph={this.makeGraph}/>
-        {this.getPic() ? <div id="pic"><img alt={this.state.title} src={this.getPic()} height="100px"/></div> : null}
+        {this.getPic() ? <div id="pic"><img alt={this.state.title} src={this.getPic()} height="150px"/><br />
+        <br /><br /><br /><br /><br /><br /></div> : null}
         <div id="graph">
           <Graph title={this.state.title.replace(/_/g, " ")} data={this.state.data} dates={this.getDates()} getTotals={() => this.getTotals()} info={this.state.info}/>
         </div>
