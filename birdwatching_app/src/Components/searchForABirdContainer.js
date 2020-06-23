@@ -94,7 +94,7 @@ export default class SearchForBird extends React.Component {
     return (
       <div className="birdSearchContainer">
         <h2>Search For a Bird</h2>
-        <SearchMenu options={this.getSearchOptions()} makeGraph={this.makeGraph}/>
+        <SearchMenu options={this.getSearchOptions()} makeGraph={this.makeGraph} default="all_birds"/>
         {this.getPic() ? <div id="pic"><img alt={this.state.title} src={this.getPic()} height="150px"/><br />
         <br /><br /><br /><br /><br /><br /></div> : null}
         <div id="graph">

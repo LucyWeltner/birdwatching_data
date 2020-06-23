@@ -2,7 +2,7 @@ import React from "react"
 
 export default class SeachMenu extends React.Component {
 	state = {
-		selected: "all_birds"
+		selected: this.props.default
 	}
 	render() {
 		let sortedOptions = this.props.options.sort()
