@@ -13,7 +13,7 @@ export default class SearchForDate extends React.Component {
 
   makeDateGraph = (date1) => {
     let data = this.props.processData()
-    let dataForDate = data.find(item => item.date == date1)
+    let dataForDate = data.find(item => item.date === date1)
     let frequencySighted = Object.values(dataForDate.birds)
     let speciesSighted = Object.keys(dataForDate.birds)
     this.setState(prevState => {

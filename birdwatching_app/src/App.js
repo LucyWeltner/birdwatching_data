@@ -15,14 +15,24 @@ class App extends React.Component {
     let birdData = require("./BirdData/bird_data.json")
     birdData = JSON.stringify(birdData)
     birdData = JSON.parse(birdData)
+    return birdData
+  }
+
+  getInfo = () => {
+    let birdData = this.processData()
     return birdData.info
+  }
+
+  getPics = () => {
+    let birdData = this.processData()
+    return birdData.pics
   }
 
   render() {
     return (
       <div className="App">
-        <SearchForBird processData = {this.processData}/>
-        <SearchForDate processData={this.processData}/>
+        <SearchForBird processData = {this.getInfo} getPics={this.getPics}/>
+        <SearchForDate processData={this.getInfo}/>
       </div>
     );
   }

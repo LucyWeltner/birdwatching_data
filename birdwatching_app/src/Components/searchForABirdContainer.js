@@ -81,11 +81,20 @@ export default class SearchForBird extends React.Component {
     }
   }
 
+  getPic() {
+    let birdPicObject = this.props.getPics()
+    if (birdPicObject[this.state.title]) {
+      console.log(birdPicObject[this.state.title])
+      return birdPicObject[this.state.title]
+    }
+  }
+
   render() {
     return (
       <div className="birdSearchContainer">
         <h2>Search For a Bird</h2>
         <SearchMenu options={this.getSearchOptions()} makeGraph={this.makeGraph}/>
+        {this.getPic() ? <div id="pic"><img alt={this.state.title} src={this.getPic()} height="100px"/></div> : null}
         <div id="graph">
           <Graph title={this.state.title.replace(/_/g, " ")} data={this.state.data} dates={this.getDates()} getTotals={() => this.getTotals()} info={this.state.info}/>
         </div>
