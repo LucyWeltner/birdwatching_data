@@ -24,8 +24,9 @@ export default class Bar extends React.Component {
 				 textbox = <text fontSize="5px" transform='rotate(90)' y="-2.5" x="-26" fill="black">{(numOfSightings === 1) ? numOfSightings + " " + this.props.info : numOfSightings + " " + this.props.info + "s"}</text>
 			}
 		}
+		console.log("scale", this.props.scale)
 		return (
-			<g className="bar" transform={`translate(${this.props.xAxis*10+15}, ${180-this.props.height})`}>
+			<g className="bar" transform={`translate(${this.props.xAxis*10+15}, ${(180/this.props.scale)-this.props.height})`}>
 				<rect onMouseOver={this.showHeight} onMouseLeave={this.hideHeight} height={this.props.height} width="10" stroke="grey" strokeWidth="1"/>
 				{textbox}
 			</g> 
